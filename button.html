@@ -1,0 +1,14 @@
+<button hx-post="/random-genre" hx-swap="outerHTML">
+    <b>
+        {{ text }}
+    </b>
+</button>
+
+
+<button hx-post="/clicked"
+    hx-trigger="click"
+    hx-target="#parent-div"
+    hx-swap="outerHTML"
+>
+    Click Me!
+</button>

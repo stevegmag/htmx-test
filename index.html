@@ -1,0 +1,27 @@
+<html>
+<head>
+    <link href="https://unpkg.com/water.css@2/out/dark.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@2.0.1" integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <h1>Basic htmx example</h1>
+    
+    {% include 'button.html' %}
+    <button 
+        hx-post="http://htmx-test.webonwater.com/rest-api/server/api/hello.php" 
+        hx-swap="innerHTML"
+        hx-target="#daTarget"
+    >
+        <b>
+           click me
+        </b>
+    </button>
+
+    <p>
+        Reload with Ctrl+B. There is also a network viewer down there 
+    </p>
+    <p id="daTarget"></p>
+
+</body>
+</html>
