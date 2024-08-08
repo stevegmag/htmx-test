@@ -17,7 +17,13 @@
            click me
         </b>
     </button>
-
+    <input type="text" name="q"
+        hx-get="/trigger_delay"
+        hx-trigger="keyup changed delay:500ms"
+        hx-target="#search-results"
+        placeholder="Search..."
+    >
+    <div id="search-results"></div>
     <p>
         Reload with Ctrl+B. There is also a network viewer down there 
     </p>
