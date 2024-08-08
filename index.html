@@ -7,14 +7,14 @@
     
     <h1>Basic htmx example</h1>
     
-    {% include 'button.html' %}
-    <!--<button 
+    <!--{% include 'button.html' %}
+    <button 
         hx-get="http://htmx-test.webonwater.com/rest-api/server/api/hello.php" 
         hx-swap="innerHTML"
         hx-target="#daTarget"
     >-->
     <button 
-        hx-get="https://stevegmag.github.io/htmx-test/rest-api/server/api/hello.php" 
+        hx-post="https://stevegmag.github.io/htmx-test/rest-api/server/api/hello.php" 
         hx-swap="innerHTML"
         hx-target="#daTarget"
     >
